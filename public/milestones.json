@@ -1,0 +1,52 @@
+{
+    "milestones": [
+        {
+            "id": 1,
+            "name": "Starting Mechatronics Engineering BSc.",
+            "description": "<span>I started studying Mechatronics Engineering in Colombia at the <a target=\"_blank\" className=\"hyperlinks\" href=\"https://www.umng.edu.co/inicio\">UMNG</a>. I focused on the software side of the degree, learning C, C++, Java, and Python. I also learned about electronics, mechanics, control systems and AI.</span>",
+            "date": "2012-01-01",
+            "image": "/images/umng.png",
+            "side": "left"
+        },
+        {
+            "id": 2,
+            "name": "Becomming an Engineer",
+            "description": "<span>I wrote my <a target=\"_blank\" className=\"hyperlinks\" href=\"/thesis.pdf\">thesis</a> on the development of an AI algorithm to detect and prevent wildfires on board an UAV. I graduated as a Mechatronics Engineer.</span>",
+            "date": "2018-05-01",
+            "image": "/images/ai.png",
+            "side": "right"
+        },
+        {
+            "id": 3,
+            "name": "Working at Servex US",
+            "description": "<span>I stated my developer career at <a target=\"_blank\" className=\"hyperlinks\" href=\"https://servex-us.com/\">Servex US</a>. I did an OOP curse in Grand Rapids to work on furniture smart catalogues using <a target=\"_blank\" className=\"hyperlinks\" href=\"https://www.configura.com/products/cet-developer\">CET</a>, Configura's product. I stayed in this department for 1 year, afterwards I moved to R&D and web development.</span>",
+            "date": "2018-09-01",
+            "image": "/images/cet.gif",
+            "side": "left"
+        },
+        {
+            "id": 4,
+            "name": "Servex US - Web development",
+            "description": "<span>I was in charge to develop a new product, a <a target=\"_blank\" className=\"hyperlinks\" href=\"https://servex-us.com/servex-online-product-configurator/\">product configurator</a> with 3D capabilities on web. In this position, my tasks included interacting with clients as the product owner, handling the quoting process, overseeing the development of the app, and finally delivering the completed app while also taking care of debugging. I worked for 2 years on this position until I moved to Austria to started my Master studies.</span>",
+            "date": "2019-08-01",
+            "image": "productConfigurator",
+            "side": "right"
+        },
+        {
+            "id": 5,
+            "name": "Working at Vreeda GmbH",
+            "description": "<span>At <a target=\"_blank\" className=\"hyperlinks\" href=\"https://www.vreeda.com/\">Vreeda<a/>, I worked as a frontend developer on a React Native app for controlling smart lights. I was in charge of continuing the redesign of the app, fixing bugs, and adding new features.</span>",
+            "date": "2022-08-01",
+            "image": "https://www.youtube.com/embed/PdtyzesiACE",
+            "side": "left"
+        },
+        {
+            "id": 6,
+            "name": "Starting Interactive Media MSc.",
+            "description": "<span>On the winter semester 2022, I started studying <a target=\"_blank\" className=\"hyperlinks\" href=\"https://www.fh-ooe.at/campus-hagenberg/studiengaenge/master/interactive-media/\">Interactive Media</a> at the FH Oberösterreich</span> in Hagenberg. I am focusing on the web development side of the degree. I expect to graduate in summer 2024.",
+            "date": "2022-10-01",
+            "image": "images/fh.svg",
+            "side": "right"
+        }
+    ]
+}

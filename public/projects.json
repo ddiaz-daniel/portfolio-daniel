@@ -1,0 +1,46 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Project 1",
+            "description": "This is project 1",
+            "created_on": "2014-01-01 00:00:00",
+            "stack": [
+                "PHP",
+                "HTML",
+                "CSS"
+            ],
+            "preview": "/images/photo.png",
+            "github": "http://www.github.com/project1",
+            "website": "http://www.example.com/project1",
+            "collaborators": [
+                {
+                    "id": 1,
+                    "name": "Collaborator 1",
+                    "github": "http://www.github.com/project1"
+                },
+                {
+                    "id": 2,
+                    "name": "Collaborator 2",
+                    "github": "http://www.github.com/project1"
+                }
+            ],
+            "tasks": [
+                {
+                    "id": 1,
+                    "name": "Task 1",
+                    "description": "This is task 1"
+                },
+                {
+                    "id": 2,
+                    "name": "Task 2",
+                    "description": "This is task 2"
+                }
+            ],
+            "tags": [
+                "professional",
+                "frontend"
+            ]
+        }
+    ]
+}

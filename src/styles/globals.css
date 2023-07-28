@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+[data-tip] {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    white-space: nowrap;
+}
+
+[data-tip]:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.snap-container {
+    scroll-snap-type: y mandatory;
+}
+
+.snap-item {
+    scroll-snap-align: start;
+
+}
+
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.animate-blink {
+    animation: blink 1s step-start infinite;
+}
+
+
+.hex-container {
+    --hex-size: 10vw;
+    --gap: 8px;
+    margin-top: var(--hex-size);
+    margin-bottom: 200px;
+}
+
+@media (max-width: 767px) {
+    .hex-container {
+        --hex-size: 25vw;
+        margin-left: 13vw;
+    }
+
+    .hex {
+        right: calc(var(--hex-size) * 0.3);
+        width: calc(var(--hex-size) * 2);
+        height: calc(var(--hex-size) * 2);
+        margin-right: calc((var(--hex-size) * -0.5) + var(--gap));
+        margin-bottom: calc((var(--hex-size) * -0.25) + calc(var(--gap) * 2));
+    }
+}
+
+
+.hex {
+    position: relative;
+    right: calc(var(--hex-size) * 0.3);
+    width: calc(var(--hex-size) * 2);
+    height: calc(var(--hex-size) * 2);
+    margin-right: calc((var(--hex-size) * -0.5) + var(--gap));
+    margin-bottom: calc((var(--hex-size) *-0.25) + calc(var(--gap) * 2));
+    background: #0000003a;
+    display: inline-block;
+    transition: all 150ms ease-in-out;
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+
+.hex:nth-child(2n+1) {
+    position: relative;
+}
+
+.hex:nth-child(2n) {
+    position: relative;
+    transform: translate(0, calc((var(--hex-size) * -0.9) - var(--gap)));
+}
+
+.hex:hover {
+    background: #F58787;
+    cursor: pointer;
+}
+
+.hyperlinks {
+    color: #0645AD;
+    text-decoration: underline;
+}
