@@ -9,8 +9,7 @@ const SocialMedia: React.FC = () => {
     return (
         <nav className="flex lg:justify-evenly justify-between mt-8">
             <Link
-                //href={`mailto:${process.env.EMAIL_ADDRESS}`}
-                href=""
+                href={`mailto:${process.env.EMAIL_ADDRESS}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-red-500 cursor-pointer transition-colors duration-300"
@@ -18,8 +17,7 @@ const SocialMedia: React.FC = () => {
                 {emailIcon}
             </Link>
             <Link
-                //href={`${process.env.LINKEDIN_URL}`}
-                href=""
+                href={`${process.env.LINKEDIN_URL}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-blue-500 cursor-pointer transition-colors duration-300"
@@ -27,8 +25,7 @@ const SocialMedia: React.FC = () => {
                 {linkedinIcon}
             </Link>
             <Link
-                //href={`${process.env.GITHUB_URL}`}
-                href=""
+                href={`${process.env.GITHUB_URL}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-500 cursor-pointer transition-colors duration-300"
