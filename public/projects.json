@@ -2,43 +2,303 @@
     "projects": [
         {
             "id": 1,
-            "name": "Project 1",
-            "description": "This is project 1",
-            "created_on": "2014-01-01 00:00:00",
+            "name": "Product Configurator - Trash Cans",
+            "description": "Working for Servex US and in collaboration with Magnuson, an American office furniture manufacturer, I developed a project focused on creating a waste receptacles showcase with modular configurations. Leveraging JavaScript and Babylon.js, the solution offers a user-friendly and stand-alone waste management system for modern workplaces and outdoor spaces. The key features of the configurator include 3D capabilities, a wide range of functional options, multi-platform compatibility, image generation, and PDF generation. The project demonstrates my expertise in web development and design, highlighting my ability to integrate technologies from multiple industries to address contemporary needs.",
+            "created_on": "2021-04-01 00:00:00",
             "stack": [
-                "PHP",
-                "HTML",
-                "CSS"
+                "js",
+                "html",
+                "css",
+                "babylonjs",
+                "bootstrap",
+                "jquery"
             ],
-            "preview": "/images/photo.png",
-            "github": "http://www.github.com/project1",
-            "website": "http://www.example.com/project1",
+            "preview": "/preview/magnuson.png",
+            "github": "https://github.com/DanDiazRep/MGO",
+            "website": "https://magnusongroup.com/configurators.html",
             "collaborators": [
                 {
                     "id": 1,
-                    "name": "Collaborator 1",
-                    "github": "http://www.github.com/project1"
-                },
-                {
-                    "id": 2,
-                    "name": "Collaborator 2",
-                    "github": "http://www.github.com/project1"
+                    "name": "Jorge Sosa",
+                    "description": "3D Artist"
                 }
             ],
-            "tasks": [
-                {
-                    "id": 1,
-                    "name": "Task 1",
-                    "description": "This is task 1"
-                },
-                {
-                    "id": 2,
-                    "name": "Task 2",
-                    "description": "This is task 2"
-                }
-            ],
+            "tasks": [],
             "tags": [
                 "professional",
+                "frontend",
+                "backend"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Product Configurator - Office Chairs",
+            "description": "During my time at Servex US, I collaborated with Wyatt Seating, an American office chairs manufacturer, to develop an engaging project centered around creating an office chairs showcase with modular configurations. This user-friendly platform, built using JavaScript and Babylon.js, presents a diverse range of 9 chair products with hundreds of customization options, providing customers with an extensive selection to meet their specific preferences and requirements. The configurator's key features are 3D capabilities for immersive visualization, real-time pricing, a wide array of functional options, multi-platform compatibility, image generation for accurate representations, and backend-based PDF generation for seamless documentation. This project aptly demonstrates my expertise in web development and design, underscoring my ability to effectively integrate technologies from multiple industries to address contemporary needs in the market.",
+            "created_on": "2019-04-01 00:00:00",
+            "stack": [
+                "js",
+                "html",
+                "css",
+                "babylonjs",
+                "bootstrap",
+                "jquery",
+                "csharp",
+                "dotnet"
+            ],
+            "preview": "/preview/wyatt.png",
+            "github": "https://github.com/DanDiazRep/Wyatt",
+            "website": "https://www.wyattseating.com/studio/index.html?name=Freeride",
+            "collaborators": [
+                {
+                    "id": 1,
+                    "name": "Jorge Sosa",
+                    "description": "3D Artist"
+                }
+            ],
+            "tasks": [],
+            "tags": [
+                "professional",
+                "frontend"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Product Configurator - Hinges",
+            "description": "During my time at Servex US, I collaborated with SOSS Door Hardware, an American hinges manufacturer, to develop a project centered around showing how their invisible hinges work. This project was built using JavaScript and Babylon.js, presents a range of hinges with some material options and an animation that shows a representation of the working product.",
+            "created_on": "2020-09-01 00:00:00",
+            "stack": [
+                "js",
+                "html",
+                "css",
+                "babylonjs",
+                "bootstrap",
+                "jquery"
+            ],
+            "preview": "/preview/soss.png",
+            "github": "https://github.com/DanDiazRep/SOSS/",
+            "website": "https://www.soss.com/",
+            "collaborators": [],
+            "tasks": [],
+            "tags": [
+                "professional",
+                "frontend"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Product Configurator - Tiny Homes",
+            "description": "During my tenure at Servex US, I initiated an innovative project focusing on American tiny houses. The core idea revolved around empowering users to create their own personalized tiny houses and furnish them with essential gadgets and furniture. Leveraging JavaScript and Babylon.js, this project offers a wide array of options for customization, allowing users to explore the entire environment within an immersive 3D world.",
+            "created_on": "2021-09-01 00:00:00",
+            "stack": [
+                "js",
+                "html",
+                "css",
+                "babylonjs",
+                "bootstrap",
+                "jquery"
+            ],
+            "preview": "/preview/tiny.png",
+            "github": "https://github.com/DanDiazRep/Tiny-House-2023",
+            "website": "https://dandiazrep.github.io/Tiny-House-2023/",
+            "collaborators": [
+                {
+                    "id": 1,
+                    "name": "Jorge Sosa",
+                    "description": "3D Artist"
+                }
+            ],
+            "tasks": [],
+            "tags": [
+                "professional",
+                "frontend"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Movies Gallery",
+            "description": "This Movie Catalog Web App is a dynamic and user-friendly project built using Next.js and React, designed to provide a seamless and enjoyable movie browsing experience. Leveraging API calls, users can easily search for movie titles by name, filter them by ID, and explore specific genres, offering a small selection of films. The icons and info text was created using Stable Diffusion and chatGPT respectively. This project aptly demonstrates my expertise in web development and design, underscoring my ability to effectively integrate technologies from multiple industries to address contemporary needs in the market.",
+            "created_on": "2021-09-01 00:00:00",
+            "stack": [
+                "ts",
+                "react",
+                "next",
+                "tailwind"
+            ],
+            "preview": "/preview/movies.png",
+            "github": "https://github.com/DanDiazRep/moviesDisplayGrid",
+            "website": "https://movies-display-grid-4j635jsrz-dandiazrep.vercel.app/",
+            "collaborators": [
+                {
+                    "id": 1,
+                    "name": "Jorge Sosa",
+                    "description": "3D Artist"
+                }
+            ],
+            "tasks": [],
+            "tags": [
+                "professional",
+                "frontend"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Objects Trader",
+            "description": "The idea of the application is 'Tinder for trading items'. You can register with your e-mail, Google, or GitHub, and proceed to add items to your account. Each item has a picture, name, and description. For each item individually, you can swipe other items and get matches. You can also edit and delete items. This project was built using React and Tailwind. The project was developed as part of a front-end course at the FH in Hagenberg in a team of 3.",
+            "created_on": "2022-11-01 00:00:00",
+            "stack": [
+                "react",
+                "tailwind",
+                "oAuth",
+                "ts"
+            ],
+            "preview": "/preview/trader.png",
+            "github": "https://github.com/DanDiazRep/HUX-Trader",
+            "website": "https://github.com/DanDiazRep/HUX-Trader",
+            "collaborators": [
+                {
+                    "id": 1,
+                    "name": "Tim Willaert",
+                    "description": "Developer"
+                },
+                {
+                    "id": 2,
+                    "name": "Brenden Grace",
+                    "description": "Developer"
+                }
+            ],
+            "tasks": [],
+            "tags": [
+                "academic",
+                "frontend"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Custom Wordle",
+            "description": "This project was build using Vuejs using Tailwind, Vite and Typescript. It uses Vitest for unit testing and it does not require any server. It works on multiple devices and it is fully responsive. The project gives to option to play in English or German. The project was developed as part of a front-end course at the FH in Hagenberg in a team of 3.",
+            "created_on": "2023-01-01 00:00:00",
+            "stack": [
+                "ts",
+                "vue",
+                "vite",
+                "tailwind"
+            ],
+            "preview": "/preview/huxle.png",
+            "github": "https://github.com/TimWillaert/HUX-Huxle",
+            "website": "https://wordle-huxle.vercel.app/",
+            "collaborators": [
+                {
+                    "id": 1,
+                    "name": "Tim Willaert",
+                    "description": "Developer"
+                },
+                {
+                    "id": 2,
+                    "name": "Brenden Grace",
+                    "description": "Developer"
+                }
+            ],
+            "tasks": [],
+            "tags": [
+                "academic",
+                "frontend"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Earthquakes visualizer",
+            "description": "This project shows a visual representation of the earthquakes that happened in the period of 1965-2016. The project was developed as part of a visualization course at the FH in Hagenberg in a team of . It uses the D3 library to create the visualizations. It was build using React, Tailwind and TypeScript.",
+            "created_on": "2023-05-01 00:00:00",
+            "stack": [
+                "react",
+                "tailwind",
+                "ts"
+            ],
+            "preview": "/preview/earthquake.png",
+            "github": "https://github.com/DanDiazRep/react-earthquakes-visualization",
+            "website": "https://earthquake-viz-fdb6c.web.app/",
+            "collaborators": [
+                {
+                    "id": 1,
+                    "name": "Lea Franz",
+                    "description": "Developer"
+                }
+            ],
+            "tasks": [],
+            "tags": [
+                "academic",
+                "frontend"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Elevation Finder",
+            "description": "The Elevation Map project is a web application that allows users to explore and visualize elevation data on a map. The application is built using Leaflet, for interactive maps, and utilizes elevation data from Open Topo Data API. It was build using React, Tailwind and TypeScript.",
+            "created_on": "2023-06-01 00:00:00",
+            "stack": [
+                "react",
+                "tailwind",
+                "ts",
+                "leaflet"
+            ],
+            "preview": "/preview/elevation.png",
+            "github": "https://github.com/DanDiazRep/elevation-map",
+            "website": "https://elevation-finder.vercel.app/",
+            "collaborators": [],
+            "tasks": [],
+            "tags": [
+                "personal",
+                "frontend"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Visual Computing Basics",
+            "description": "This project covers basics from computer vision. It was build using Python and OpenCV. The project was developed as part of a computer vision course at the FH in Hagenberg. It contains different tasks: 1. Image processing, 2. Image segmentation, 3. Image classification. 4.Panorama stitching. 5.Feature Extraction and Matching 6.3D Reconstruction. 7. SLAM (Simultaneous Localization and Mapping). 8.Compression using FFT (Fourier Fast Transform) filtering and MLNN (Multi-Layer Neural Network) filtering. ",
+            "created_on": "2023-06-01 00:00:00",
+            "stack": [
+                "python",
+                "opencv"
+            ],
+            "preview": "/preview/vc.png",
+            "github": "https://github.com/DanDiazRep/Visual-Computing-Basics/",
+            "website": "https://github.com/DanDiazRep/Visual-Computing-Basics/",
+            "collaborators": [],
+            "tasks": [],
+            "tags": [
+                "academic",
+                "frontend"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Styleguide Generator",
+            "description": "This project was build using ChatGPT API to create a customizable styleguide generator for developers and inspiration for designers. It generates a styleguide based on the input of the user. The project was developed as part of a group 3 project in the FH in Hagenberg. It uses Twig, JavaScript, SCSS and PHP.",
+            "created_on": "2023-07-01 00:00:00",
+            "stack": [
+                "php",
+                "scss",
+                "js",
+                "twig"
+            ],
+            "preview": "/preview/styleguide.png",
+            "github": "https://github.com/DanDiazRep/",
+            "website": "https://github.com/DanDiazRep/",
+            "collaborators": [
+                {
+                    "id": 1,
+                    "name": "Anna Maschek",
+                    "description": "Developer"
+                },
+                {
+                    "id": 1,
+                    "name": "Stijn Driessens",
+                    "description": "Developer"
+                }
+            ],
+            "tasks": [],
+            "tags": [
+                "academic",
                 "frontend"
             ]
         }

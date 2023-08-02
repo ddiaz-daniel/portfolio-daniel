@@ -24,7 +24,6 @@ const renderColorOption = ({ color, activeColor, onClick }: ColorOptionProps) =>
 
 const ProductConfiguator: React.FC<ProductConfiguratorProps> = ({ className }) => {
     const [activeColor, setActiveColor] = useState<BABYLON.Color3>(BABYLON.Color3.White());
-    const [isLoading, setIsLoading] = useState(true); // Add loading state
 
     const fabricMaterialRef = useRef<BABYLON.PBRBaseMaterial | null>(null);
 
@@ -91,7 +90,6 @@ const ProductConfiguator: React.FC<ProductConfiguratorProps> = ({ className }) =
                 };
 
                 window.addEventListener('resize', resizeWindow);
-                setIsLoading(false);
                 return () => {
                     window.removeEventListener('resize', resizeWindow);
                     engine.dispose();
@@ -112,17 +110,14 @@ const ProductConfiguator: React.FC<ProductConfiguratorProps> = ({ className }) =
     return (
 
         <div className={`${className} flex flex-row`} >
-            <canvas id="chairCanvas" className='w-4/5 active:' />
-            <div className='flex flex-col justify-evenly w-1/5 '>
+            <canvas id="chairCanvas" className='w-4/5 outline-none' />
+            <div className='flex flex-col justify-evenly w-1/5 items-center'>
                 {renderColorOption({ color: BABYLON.Color3.White(), activeColor, onClick: handleColorChange })}
                 {renderColorOption({ color: new BABYLON.Color3(0, 0, 0), activeColor, onClick: handleColorChange })}
                 {renderColorOption({ color: new BABYLON.Color3(0.4, 0.4, 0.4), activeColor, onClick: handleColorChange })}
                 {renderColorOption({ color: new BABYLON.Color3(0.9, 0.4, 0.4), activeColor, onClick: handleColorChange })}
                 {renderColorOption({ color: new BABYLON.Color3(0.9, 0.9, 0.4), activeColor, onClick: handleColorChange })}
                 {renderColorOption({ color: new BABYLON.Color3(0.4, 0.1, 0.9), activeColor, onClick: handleColorChange })}
-
-
-
             </div>
         </div>
     );

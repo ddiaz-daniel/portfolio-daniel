@@ -3,8 +3,9 @@ import { FaQuestion } from "react-icons/fa";
 import {
     SiOpencv, SiNextdotjs, SiJquery, SiTypescript, SiCsharp, SiGithub, SiWhatsapp,
     SiGmail, SiLinkedin, SiPython, SiJavascript, SiArduino, SiBootstrap, SiCplusplus,
-    SiCss3, SiHtml5, SiPhp, SiReact, SiSass, SiTailwindcss, SiUnity, SiDotnet
+    SiCss3, SiHtml5, SiPhp, SiReact, SiSass, SiTailwindcss, SiUnity, SiDotnet, SiVuedotjs
 } from "react-icons/si";
+import Image from "next/image";
 
 export const technologyIcons: Record<string, React.FC<{ size: number; }>> = {
     github: ({ size }) => <SiGithub size={size} />,
@@ -29,8 +30,21 @@ export const technologyIcons: Record<string, React.FC<{ size: number; }>> = {
     opencv: ({ size }) => <SiOpencv size={size} />,
     tailwind: ({ size }) => <SiTailwindcss size={size} />,
     dotnet: ({ size }) => <SiDotnet size={size} />,
+    vue: ({ size }) => <SiVuedotjs size={size} />,
+    babylonjs: ({ size }) => <BabylonIcon size={size} />,
     other: ({ size }) => <FaQuestion size={size} />,
 };
+//import babylon image to use as icon
+
+const BabylonIcon = ({ size = 24 }: { size: number; }) => (
+    <Image
+        src="/babylon-icon.png"
+        alt="BabylonJS"
+        className={`w-[${size}px] h-[${size}px]`}
+        width={40}
+        height={40}
+    />
+);
 
 export const getIcon = (iconName: string, size = 50) => {
     const icon = technologyIcons[iconName.toLowerCase()];

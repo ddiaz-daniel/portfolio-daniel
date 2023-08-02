@@ -5,7 +5,6 @@ import parse from 'html-react-parser';
 import ProductConfigurator from './productConfigurator';
 
 const isYouTubeVideo = (url: string) => {
-    // You can add more validation logic here to check if the URL is a valid YouTube video URL
     return url.includes('youtube.com') || url.includes('youtu.be');
 };
 
@@ -46,7 +45,8 @@ const TimelineMilestone: React.FC<Milestone> = (milestone) => {
                         title="Embedded youtube"
                     />
                 ) : milestone.image === "productConfigurator" ?
-                    <ProductConfigurator className="w-auto h-[300px] bg-transparent" /> :
+                    <div className="w-full h-[300px] bg-transparent"></div> :
+                    //<ProductConfigurator className="w-auto h-[300px] bg-transparent" /> :
                     <Image src={milestone.image} alt="Timeline" className="w-auto h-[300px] object-contain" height={300} width={300} />
                 }
                 </div>

@@ -11,7 +11,7 @@ const Timeline: React.FC = () => {
     }
 
     return (
-        <div id="#timeline" className="bg-gray-200">
+        <div id="#timeline" className="bg-gray-200 mb-8">
             <div className="w-4/5 mx-auto">
                 <div className="flex flex-col w-full">
                     {milestones.map((milestone, index) => (
