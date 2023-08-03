@@ -28,7 +28,8 @@ export interface Technology {
 export interface Collaborator {
     id: number;
     name: string;
-    github: string;
+    role: string;
+    github?: string;
 }
 
 export interface Task {

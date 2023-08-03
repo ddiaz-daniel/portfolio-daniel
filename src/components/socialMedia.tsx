@@ -1,15 +1,21 @@
 import React from "react";
 import { getIcon } from "./technologyIcons";
 import Link from "next/link";
-const SocialMedia: React.FC = () => {
-    const githubIcon = getIcon("github", 40);
-    const linkedinIcon = getIcon("linkedin", 40);
-    const emailIcon = getIcon("email", 40);
+
+interface SocialMediaProps {
+    className?: string;
+    size?: number;
+}
+
+const SocialMedia: React.FC<SocialMediaProps> = ({ className, size = 40 }) => {
+    const githubIcon = getIcon("github", size);
+    const linkedinIcon = getIcon("linkedin", size);
+    const emailIcon = getIcon("email", size);
 
     return (
-        <nav className="flex lg:justify-evenly justify-between mt-8">
+        <nav className={`flex lg:justify-evenly justify-between mt-8 ${className}`}>
             <Link
-                href={`mailto:${process.env.EMAIL_ADDRESS}`}
+                href={`mailto:zrelick@gmail.com`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-red-500 cursor-pointer transition-colors duration-300"

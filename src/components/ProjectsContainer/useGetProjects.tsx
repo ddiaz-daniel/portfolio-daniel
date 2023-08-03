@@ -1,18 +1,19 @@
 import { useEffect, useState } from "react";
 import { type Project, type ProjectsResponse } from "~/types/types";
 
-function useGetProjects() {
+function useGetProjects(activeFilter?: string[]) {
     const [projectsResponse, setProjectsResponse] = useState<Project[] | null>(null);
-
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/api/projects', {
-                    method: 'GET',
+                const response = await fetch(`/api/projects`, {
+                    method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
+                    body: JSON.stringify(activeFilter),
                 });
+
 
                 if (!response.ok) {
                     console.error(response);
@@ -28,7 +29,7 @@ function useGetProjects() {
         };
 
         void fetchData();
-    }, []);
+    }, [activeFilter]);
 
     return projectsResponse;
 }
