@@ -59,7 +59,7 @@ const ProjectDescription = () => {
             </Head>
             <div className="flex min-h-screen">
                 <Navigation />
-                <div className="flex flex-col items-center justify-center w-full snap-mandatory snap-y">
+                <div className="flex flex-col items-center justify-center w-full snap-mandatory snap-y overflow-hidden">
                     {false ? (
                         <BackgroundParticles className="z-[-10] fixed top-0 left-0 w-full h-full bg-[rgb(0,0,50)]" />
                     ) : (
