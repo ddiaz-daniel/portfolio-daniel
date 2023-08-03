@@ -23,7 +23,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ className, size = 40 }) => {
                 {emailIcon}
             </Link>
             <Link
-                href={`${process.env.LINKEDIN_URL}`}
+                href="https://www.linkedin.com/in/daniel-diaz-33881015b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-blue-500 cursor-pointer transition-colors duration-300"
@@ -31,7 +31,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ className, size = 40 }) => {
                 {linkedinIcon}
             </Link>
             <Link
-                href={`${process.env.GITHUB_URL}`}
+                href="https://github.com/DanDiazRep"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-500 cursor-pointer transition-colors duration-300"
