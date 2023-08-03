@@ -14,7 +14,7 @@ export const languages = [
     { id: 'ts', name: 'TypeScript', color: 'blue-700' },
     { id: 'html', name: 'HTML', color: 'orange-600' },
     { id: 'css', name: 'CSS', color: 'blue-600' },
-    { id: 'react', name: 'React/ React Native', color: 'blue-400' },
+    { id: 'react', name: 'React', color: 'blue-400' },
     { id: 'next', name: 'Next.js', color: 'black' },
     { id: 'php', name: 'PHP', color: 'purple-500' },
     { id: 'scss', name: 'SCSS', color: 'pink-500' },
