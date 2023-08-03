@@ -3,26 +3,26 @@ import { getIcon } from '../technologyIcons';
 import { useProjectFilterContext } from './projectFilterContext';
 
 export const languages = [
-    { id: 'python', name: 'Python', color: 'yellow-500' },
-    { id: 'js', name: 'JavaScript', color: 'yellow-500' },
-    { id: 'bootstrap', name: 'Bootstrap', color: 'purple-500' },
-    { id: 'jquery', name: 'jQuery', color: 'blue-600' },
+    { id: 'python', name: 'Python', color: 'bg-yellow-500' },
+    { id: 'js', name: 'JavaScript', color: 'bg-yellow-500' },
+    { id: 'bootstrap', name: 'Bootstrap', color: 'bg-purple-500' },
+    { id: 'jquery', name: 'jQuery', color: 'bg-blue-600' },
     //{ id: 'cpp', name: 'C++', color: 'blue-400' },
     //{ id: 'unity', name: 'Unity', color: 'black' },
-    { id: 'csharp', name: 'C#', color: 'green-600' },
+    { id: 'csharp', name: ' C# ', color: 'bg-green-600' },
     //{ id: 'arduino', name: 'Arduino', color: 'teal-500' },
-    { id: 'ts', name: 'TypeScript', color: 'blue-700' },
-    { id: 'html', name: 'HTML', color: 'orange-600' },
-    { id: 'css', name: 'CSS', color: 'blue-600' },
-    { id: 'react', name: 'React', color: 'blue-400' },
-    { id: 'next', name: 'Next.js', color: 'black' },
-    { id: 'php', name: 'PHP', color: 'purple-500' },
-    { id: 'scss', name: 'SCSS', color: 'pink-500' },
-    { id: 'opencv', name: 'OpenCV', color: 'red-500' },
-    { id: 'tailwind', name: 'Tailwind', color: 'cyan-500' },
-    { id: 'dotnet', name: '.NET', color: 'purple-500' },
-    { id: 'vue', name: 'Vue', color: 'green-500' },
-    { id: 'babylonjs', name: 'Babylon.js', color: 'orange-600' },
+    { id: 'ts', name: 'TypeScript', color: 'bg-blue-700' },
+    { id: 'html', name: 'HTML', color: 'bg-orange-600' },
+    { id: 'css', name: 'CSS', color: 'bg-blue-600' },
+    { id: 'react', name: 'React', color: 'bg-blue-400' },
+    { id: 'next', name: 'Next.js', color: 'bg-black' },
+    { id: 'php', name: 'PHP', color: 'bg-purple-500' },
+    { id: 'scss', name: 'SCSS', color: 'bg-pink-500' },
+    { id: 'opencv', name: 'OpenCV', color: 'bg-red-500' },
+    { id: 'tailwind', name: 'Tailwind', color: 'bg-cyan-500' },
+    { id: 'dotnet', name: '.NET', color: 'bg-purple-500' },
+    { id: 'vue', name: 'Vue', color: 'bg-green-500' },
+    { id: 'babylonjs', name: 'Babylon.js', color: 'bg-orange-600' },
 
 ];
 
@@ -114,7 +114,7 @@ const ProjectFilter: React.FC = () => {
                     <button
                         key={name}
                         onClick={() => handleLanguageClick(id)}
-                        className={`flex flex-row content-stretch ${activeFilter.includes(id) ? `bg-${color} text-white` : 'bg-white text-black'
+                        className={`flex flex-row content-stretch ${activeFilter.includes(id) ? `${color} text-white` : 'bg-white text-black'
                             } rounded p-2 items-center`}
                     >
                         {getIcon(id, 24)}

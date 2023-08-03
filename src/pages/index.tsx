@@ -10,6 +10,24 @@ import { ProjectFilterProvider } from '~/components/ProjectsContainer/projectFil
 
 const Home = () => {
 
+  //get rounte and scroll to section after page load
+  useEffect(() => {
+    const fullHref = typeof window !== 'undefined' ? `${window.location.href}` : "";
+    const route = fullHref.split('#')[1];
+    if (route) {
+      scrollToSection(`#${route}`);
+    }
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  };
+
 
   return (
     <>
@@ -21,7 +39,7 @@ const Home = () => {
       <div className="flex min-h-screen">
         <Navigation />
         <div className="flex flex-col items-center justify-center w-full snap-mandatory snap-y">
-          {false ?
+          {true ?
             <BackgroundParticles className="z-[-10] fixed top-0 left-0 w-full h-full bg-[rgb(0,0,50)]" /> :
             <div className="z-[-10] fixed top-0 left-0 w-full h-full bg-[rgb(0,0,50)]" />}
           <PortfolioHeader className="snap-start" />

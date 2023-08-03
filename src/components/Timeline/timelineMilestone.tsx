@@ -45,8 +45,8 @@ const TimelineMilestone: React.FC<Milestone> = (milestone) => {
                         title="Embedded youtube"
                     />
                 ) : milestone.image === "productConfigurator" ?
-                    <div className="w-full h-[300px] bg-transparent"></div> :
-                    //<ProductConfigurator className="w-auto h-[300px] bg-transparent" /> :
+                    //<div className="w-full h-[300px] bg-transparent"></div> :
+                    <ProductConfigurator className="w-auto h-[300px] bg-transparent" /> :
                     <Image src={milestone.image} alt="Timeline" className="w-auto h-[300px] object-contain" height={300} width={300} />
                 }
                 </div>

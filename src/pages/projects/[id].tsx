@@ -60,7 +60,7 @@ const ProjectDescription = () => {
             <div className="flex min-h-screen">
                 <Navigation />
                 <div className="flex flex-col items-center justify-center w-full snap-mandatory snap-y overflow-hidden">
-                    {false ? (
+                    {true ? (
                         <BackgroundParticles className="z-[-10] fixed top-0 left-0 w-full h-full bg-[rgb(0,0,50)]" />
                     ) : (
                         <div className="z-[-10] fixed top-0 left-0 w-full h-full bg-[rgb(0,0,50)]" />
@@ -145,15 +145,14 @@ const ProjectDescription = () => {
                                 <h1 className="text-2xl font-bold text-white pb-8">
                                     Stack
                                 </h1>
-                                <div className="flex flex-row space-x-4">
+                                <div className="flex flex-wrap justify-start">
                                     {project.stack.map((stackItem) => {
 
                                         const { name, color } = languages.find((language) => language.id === stackItem) ?? { name: stackItem, color: "black" };
-                                        const textColor = "bg-" + color;
                                         return (
                                             <div
                                                 key={stackItem}
-                                                className={`flex flex-col p-2 text-xs text-white ${textColor} rounded-md place-items-center place-content-center`}
+                                                className={`flex flex-col m-2 p-2 text-xs text-white ${color} rounded-md place-items-center`}
                                             >
                                                 {getIcon(stackItem, 30)}
                                                 <span className="pl-2 text-lg text-white">{name}</span>

@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { CgClose, CgMenu } from 'react-icons/cg';
 import SocialMedia from '../socialMedia';
-import Image from 'next/image';
+import { BsClockHistory, BsCodeSlash, BsFileEarmarkPdf, BsFillHouseDoorFill, BsFillPersonFill } from 'react-icons/bs';
 
 const Navigation = () => {
-    const [showNav, setShowNav] = useState(true);
 
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
@@ -15,67 +13,49 @@ const Navigation = () => {
             });
         }
     };
-
-    const setNavClasses = () => {
-        if (showNav) {
-            return "translate-x-0";
-        } else {
-            return "-translate-x-full";
-        }
-    };
-
-    const toggleNav = () => {
-        setShowNav(!showNav);
-    };
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const isAtTop = window.scrollY <= window.innerHeight * 0.4;
-            setShowNav(isAtTop);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    const navClasses = setNavClasses();
-
+    const fullHref = typeof window !== 'undefined' ? `${window.location.origin}` : "";
     return (
         <>
-            <button
-                className={`fixed top-4 z-10 bg-gray-800 p-2 rounded-md text-white hover:text-hsl(280,100%,70%) transition-all duration-300 ${showNav ? ' translate-x-64' : 'translate-x-4'}`}
-                onClick={toggleNav}
-            >
-                {showNav ?
-                    <CgClose size={25} /> :
-                    <CgMenu size={25} />
-                }
-            </button>
-
             <nav
-                className={`fixed w-80 left-0 top-0 h-screen opacity-80 bg-gray-800 text-white p-4 text-2xl
-                flex flex-col justify-center ${navClasses} transition-transform duration-300 `}
+                className={`fixed w-16 left-0 top-0 h-screen opacity-80 bg-gray-800 text-white p-4 text-2xl
+                flex flex-col justify-center z-10`}
             >
-                <Link className="w-fit" href="" onClick={() => scrollToSection('')}>
-                    <Image src="/images/danielLogo.png" alt="logo" width={200} height={200} />
-                </Link>
-                <div className="pl-10 flex flex-col h-[80vh] place-content-center">
-                    <Link className="w-fit" href="#about" onClick={() => scrollToSection('#about')}>
-                        <span className="hover:text-[hsl(280,100%,70%)] transition-colors duration-300">About</span>
+
+                <div className="flex flex-col place-content-center space-y-4">
+                    <Link className="flex flex-row w-fit group" href={`${fullHref}`} onClick={() => scrollToSection('#home')} passHref>
+                        <BsFillHouseDoorFill size={30} className="hover:text-purple-500" />
+                        <span className="opacity-0 group-hover:opacity-100 transform pl-6 transition-opacity duration-300 bg-gray-800 pr-4 py-1 rounded-md">
+                            Home
+                        </span>
                     </Link>
-                    <Link className="w-fit" href="#timeline" onClick={() => scrollToSection('#timeline')}>
-                        <span className="hover:text-[hsl(280,100%,70%)] transition-colors duration-300">Timeline</span>
+                    <Link className="flex flex-row w-fit group" href={`${fullHref}#about`} onClick={() => scrollToSection('#about')} passHref>
+                        <BsFillPersonFill size={30} className="hover:text-purple-500" />
+                        <span className="opacity-0 group-hover:opacity-100 transform pl-6 transition-opacity duration-300 bg-gray-800 pr-4 py-1 rounded-md">
+                            About
+                        </span>
                     </Link>
-                    <Link className="w-fit" href="#projects" onClick={() => scrollToSection('#projects')}>
-                        <span className="hover:text-[hsl(280,100%,70%)] transition-colors duration-300">Projects</span>
+                    <Link className="flex flex-row w-fit group" href={`${fullHref}#timeline`} onClick={() => scrollToSection('#timeline')}>
+                        <BsClockHistory size={30} className="hover:text-purple-500" />
+                        <span className="opacity-0 group-hover:opacity-100 transform pl-6 transition-opacity duration-300 bg-gray-800 pr-4 py-1 rounded-md">
+                            Timeline
+                        </span>
                     </Link>
-                    <Link className="w-fit" href="#resume" onClick={() => scrollToSection('#resume')}>
-                        <span className="hover:text-[hsl(280,100%,70%)] transition-colors duration-300">Resume</span>
+                    <Link className="flex flex-row w-fit group" href={`${fullHref}#projects`} onClick={() => scrollToSection('#projects')}>
+                        <BsCodeSlash size={30} className="hover:text-purple-500" />
+                        <span className="opacity-0 group-hover:opacity-100 transform pl-6 transition-opacity duration-300 bg-gray-800 pr-4 py-1 rounded-md">
+                            Projects
+                        </span>
+                    </Link>
+                    <Link className="flex flex-row w-fit group items-center" href="/documents/DIAZ_Daniel_CV_2023.pdf" target='_blank'>
+                        <BsFileEarmarkPdf size={30} className="hover:text-purple-500" />
+                        <span className="opacity-0 group-hover:opacity-100 transform pl-6 transition-opacity duration-300 bg-gray-800 pr-4 py-1 rounded-md">
+                            Resume
+                        </span>
                     </Link>
                 </div>
-                <div className="flex flex-col">
-                    <SocialMedia />
+
+                <div className="absolute bottom-4 py-8">
+                    <SocialMedia className='flex-col space-y-4' size={30} />
                 </div>
             </nav>
         </>
