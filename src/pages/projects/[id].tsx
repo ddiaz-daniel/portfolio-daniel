@@ -89,7 +89,7 @@ const ProjectDescription = () => {
                                 {project.github && (
 
                                     <a href={project.github} target="_blank" rel="noopener noreferrer"
-                                        className="flex flex-row text-black bg-white py-4 px-8 rounded-md">
+                                        className="flex flex-row text-black bg-white hover:bg-purple-500 hover:text-white py-4 px-8 rounded-md">
                                         {getIcon("github", 30)}
                                         <span className='pl-4 text-xl text-bold'>Github</span>
                                     </a>
@@ -97,7 +97,7 @@ const ProjectDescription = () => {
                                 {project.website && (
 
                                     <a href={project.website} target="_blank" rel="noopener noreferrer"
-                                        className="flex flex-row text-black bg-white py-4 px-8 rounded-md">
+                                        className="flex flex-row text-black bg-white py-4 px-8 rounded-md  hover:bg-purple-500 hover:text-white ">
                                         <FaGlobe size={30} />
                                         <span className='pl-4 text-xl text-bold'>Website</span></a>
                                 )}
