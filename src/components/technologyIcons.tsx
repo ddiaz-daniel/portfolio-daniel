@@ -40,9 +40,10 @@ const BabylonIcon = ({ size = 24 }: { size: number; }) => (
     <Image
         src="/babylon-icon.png"
         alt="BabylonJS"
-        className={`w-[${size}px] h-[${size}px]`}
-        width={40}
-        height={40}
+        className={``}
+        width={size}
+        height={size}
+        layout="fixed"
     />
 );
 

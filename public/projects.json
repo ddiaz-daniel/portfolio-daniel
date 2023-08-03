@@ -20,7 +20,7 @@
                 {
                     "id": 1,
                     "name": "Jorge Sosa",
-                    "description": "3D Artist"
+                    "role": "3D Artist"
                 }
             ],
             "tasks": [],
@@ -52,7 +52,7 @@
                 {
                     "id": 1,
                     "name": "Jorge Sosa",
-                    "description": "3D Artist"
+                    "role": "3D Artist"
                 }
             ],
             "tasks": [],
@@ -77,7 +77,13 @@
             "preview": "/preview/soss.png",
             "github": "https://github.com/DanDiazRep/SOSS/",
             "website": "https://www.soss.com/",
-            "collaborators": [],
+            "collaborators": [
+                {
+                    "id": 1,
+                    "name": "Jorge Sosa",
+                    "role": "3D Artist"
+                }
+            ],
             "tasks": [],
             "tags": [
                 "professional",
@@ -104,7 +110,7 @@
                 {
                     "id": 1,
                     "name": "Jorge Sosa",
-                    "description": "3D Artist"
+                    "role": "3D Artist"
                 }
             ],
             "tasks": [],
@@ -127,13 +133,7 @@
             "preview": "/preview/movies.png",
             "github": "https://github.com/DanDiazRep/moviesDisplayGrid",
             "website": "https://movies-display-grid-4j635jsrz-dandiazrep.vercel.app/",
-            "collaborators": [
-                {
-                    "id": 1,
-                    "name": "Jorge Sosa",
-                    "description": "3D Artist"
-                }
-            ],
+            "collaborators": [],
             "tasks": [],
             "tags": [
                 "professional",
@@ -158,12 +158,14 @@
                 {
                     "id": 1,
                     "name": "Tim Willaert",
-                    "description": "Developer"
+                    "role": "Developer",
+                    "github": "https://github.com/TimWillaert"
                 },
                 {
                     "id": 2,
                     "name": "Brenden Grace",
-                    "description": "Developer"
+                    "role": "Developer",
+                    "github": "https://github.com/nodachi13"
                 }
             ],
             "tasks": [],
@@ -190,12 +192,14 @@
                 {
                     "id": 1,
                     "name": "Tim Willaert",
-                    "description": "Developer"
+                    "role": "Developer",
+                    "github": "https://github.com/TimWillaert"
                 },
                 {
                     "id": 2,
                     "name": "Brenden Grace",
-                    "description": "Developer"
+                    "role": "Developer",
+                    "github": "https://github.com/nodachi13"
                 }
             ],
             "tasks": [],
@@ -221,7 +225,8 @@
                 {
                     "id": 1,
                     "name": "Lea Franz",
-                    "description": "Developer"
+                    "role": "Developer",
+                    "github": "https://github.com/LeaFranz"
                 }
             ],
             "tasks": [],
@@ -288,12 +293,12 @@
                 {
                     "id": 1,
                     "name": "Anna Maschek",
-                    "description": "Developer"
+                    "role": "Developer"
                 },
                 {
                     "id": 1,
                     "name": "Stijn Driessens",
-                    "description": "Developer"
+                    "role": "Developer"
                 }
             ],
             "tasks": [],
