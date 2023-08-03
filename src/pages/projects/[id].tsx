@@ -59,14 +59,14 @@ const ProjectDescription = () => {
             </Head>
             <div className="flex min-h-screen">
                 <Navigation />
-                <div className="flex flex-col items-center justify-center w-full snap-mandatory snap-y overflow-hidden">
+                <div className="flex flex-col items-center justify-center w-full snap-mandatory snap-y overflow-hidden ">
                     {true ? (
                         <BackgroundParticles className="z-[-10] fixed top-0 left-0 w-full h-full bg-[rgb(0,0,50)]" />
                     ) : (
                         <div className="z-[-10] fixed top-0 left-0 w-full h-full bg-[rgb(0,0,50)]" />
                     )}
                     <div className="flex flex-col md:flex-row w-screen min-h-screen">
-                        <div className="flex flex-col place-content-center w-screen md:w-1/2 h-full p-16 lg:pl-32 lg:fixed">
+                        <div className="flex flex-col place-content-center w-screen md:w-1/2 h-full p-16 pl-20 lg:pl-32 lg:fixed">
                             <div className="relative w-full">
                                 <Image
                                     alt="Laptop Frame"
@@ -87,25 +87,23 @@ const ProjectDescription = () => {
                             </div>
                             <div className="flex flex-row space-x-4 w-full items-center justify-around mt-8">
                                 {project.github && (
-
                                     <a href={project.github} target="_blank" rel="noopener noreferrer"
-                                        className="flex flex-row text-black bg-white hover:bg-purple-500 hover:text-white py-4 px-8 rounded-md">
+                                        className="flex flex-row text-black bg-white hover:bg-purple-500 hover:text-white py-2 px-4 md:py-4 md:px-8 rounded-md">
                                         {getIcon("github", 30)}
                                         <span className='pl-4 text-xl text-bold'>Github</span>
                                     </a>
                                 )}
                                 {project.website && (
-
                                     <a href={project.website} target="_blank" rel="noopener noreferrer"
-                                        className="flex flex-row text-black bg-white py-4 px-8 rounded-md  hover:bg-purple-500 hover:text-white ">
+                                        className="flex flex-row text-black bg-white py-2 px-4 md:py-4 md:px-8 rounded-md hover:bg-purple-500 hover:text-white ">
                                         <FaGlobe size={30} />
                                         <span className='pl-4 text-xl text-bold'>Website</span></a>
                                 )}
 
                             </div>
                         </div>
-                        <div className="flex flex-col items-center justify-center w-full md:w-1/2 h-full px-8 md:px-8 lg:px-32 ml-auto">
-                            <h1 className="text-5xl font-bold text-purple-500 pt-16 pb-2">
+                        <div className="flex flex-col items-center justify-center w-full md:w-1/2 h-full pl-20 pr-8 md:px-8 lg:px-32 ml-auto">
+                            <h1 className="text-2xl md:text-5xl font-bold text-purple-500 pt-16 pb-2">
                                 {showTitle && title || "_"}
                             </h1>
                             {/*Project year*/}

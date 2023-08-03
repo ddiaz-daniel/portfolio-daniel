@@ -17,7 +17,7 @@ const Navigation = () => {
     return (
         <>
             <nav
-                className={`fixed w-16 left-0 top-0 h-screen opacity-80 bg-gray-800 text-white p-4 text-2xl
+                className={`fixed w-16 left-0 top-0 h-full opacity-80 bg-gray-800 text-white p-4 text-2xl
                 flex flex-col justify-center z-10`}
             >
 
