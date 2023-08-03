@@ -15,7 +15,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ className, size = 40 }) => {
     return (
         <nav className={`flex lg:justify-evenly justify-between mt-8 ${className}`}>
             <Link
-                href={`mailto:${process.env.EMAIL_ADDRESS}`}
+                href={`mailto:zrelick@gmail.com`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-red-500 cursor-pointer transition-colors duration-300"
