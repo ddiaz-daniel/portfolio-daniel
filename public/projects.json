@@ -244,7 +244,8 @@
                 "react",
                 "tailwind",
                 "ts",
-                "leaflet"
+                "leaflet",
+                "next"
             ],
             "preview": "/preview/elevation.png",
             "github": "https://github.com/DanDiazRep/elevation-map",
@@ -301,6 +302,27 @@
                     "role": "Developer"
                 }
             ],
+            "tasks": [],
+            "tags": [
+                "academic",
+                "frontend"
+            ]
+        },
+        {
+            "id": 12,
+            "name": "My portfolio",
+            "description": "This project itself is my portfolio. It was build using React, Next.js, Tailwind and TypeScript. It is hosted on Vercel.",
+            "created_on": "2023-08-01 00:00:00",
+            "stack": [
+                "react",
+                "next",
+                "ts",
+                "tailwind"
+            ],
+            "preview": "/preview/portfolio.png",
+            "github": "https://github.com/DanDiazRep/portfolio-daniel",
+            "website": "https://portfolio-daniel-virid.vercel.app/",
+            "collaborators": [],
             "tasks": [],
             "tags": [
                 "academic",
