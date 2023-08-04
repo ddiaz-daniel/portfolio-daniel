@@ -5,8 +5,7 @@ import Navigation from '~/components/Navigation';
 import useGetProjectById from '~/components/ProjectsContainer/useGetProjectById';
 import BackgroundParticles from '~/components/sceneComponent';
 import Image from 'next/image';
-import { getIcon } from '~/components/technologyIcons';
-import { languages } from '~/components/ProjectsContainer/projectFilter';
+import { getIcon, languages } from '~/components/technologyIcons';
 import { FaGlobe } from 'react-icons/fa';
 
 const ProjectDescription = () => {
