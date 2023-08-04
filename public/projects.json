@@ -216,7 +216,8 @@
             "stack": [
                 "react",
                 "tailwind",
-                "ts"
+                "ts",
+                "next"
             ],
             "preview": "/preview/earthquake.png",
             "github": "https://github.com/DanDiazRep/react-earthquakes-visualization",
