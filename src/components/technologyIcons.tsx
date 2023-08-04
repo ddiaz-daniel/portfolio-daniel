@@ -98,7 +98,7 @@ const ViteIcon = ({ size = 24 }: { size: number; }) => (
 
 const OpenCVIcon = ({ size = 24 }: { size: number; }) => (
     <Image
-        src="/icons/openCV-icon.png"
+        src="/icons/opencv-icon.png"
         alt="OpenCV"
         className={``}
         width={size}
