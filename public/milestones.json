@@ -11,7 +11,7 @@
         {
             "id": 2,
             "name": "Becomming an Engineer",
-            "description": "<span>I wrote my <a target=\"_blank\" className=\"hyperlinks\" href=\"/thesis.pdf\">thesis</a> on the development of an AI algorithm to detect and prevent wildfires on board an UAV. I graduated as a Mechatronics Engineer.</span>",
+            "description": "<span>I wrote my <a target=\"_blank\" className=\"hyperlinks\" href=\"/documents/thesis.pdf\">thesis</a> on the development of an AI algorithm to detect and prevent wildfires on board an UAV. I graduated as a Mechatronics Engineer.</span>",
             "date": "2018-05-01",
             "image": "/images/ai.png",
             "side": "right"
