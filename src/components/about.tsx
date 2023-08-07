@@ -12,12 +12,11 @@ const About: React.FC<AboutProps> = ({ className }) => {
                 <h1 className="text-2xl font-bold leading-none place-self-start text-white md:text-[2.5rem] lg:text-[6rem] line pb-16">
                     About me
                 </h1>
-                <h1 className="text-xl font-normal md:place-self-start text-white md:text-[1.5rem] lg:text-[1.8rem] leading-9">
-                    My name is Daniel Diaz I am a web developer and Masters student at the {' '}
-                    <span className="text-purple-500">FH Oberösterreich</span>
-                    {' '}in Hegenberg, Austria. With 4+ years of experience in the field, I have worked with a variety of technologies and frameworks.
-                    I am currently focused on {' '}
-                    <span className="text-purple-500">React</span> and <span className="text-purple-500">Next.js</span>.
+                <h1 className="text-xl font-normal md:place-self-start text-white md:text-[1.5rem] lg:text-[1.8rem] leading-10">
+                    My name is Daniel Diaz.  I am a web developer and Masters student at the {' '}
+                    I&apos;m Daniel Diaz, a dedicated web developer and a Masters student at <span className="text-purple-500">FH Oberösterreich</span> in Hegenberg, Austria.
+                    With over 4 years of hands-on experience in the field, I&apos;ve had the privilege of working with a diverse range of technologies and frameworks.
+                    Presently, my primary focus lies on <span className="text-purple-500">React</span> and <span className="text-purple-500">Next.js</span>, as I continue to deepen my expertise in these cutting-edge tools.
                 </h1>
                 <h1 className="text-2xl font-normal leading-none md:place-self-start text-white md:text-[2.5rem] lg:text-[2rem] line pt-8">
                     And this has been part of my journey so far...
