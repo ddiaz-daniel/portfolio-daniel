@@ -15,7 +15,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ className, size = 40 }) => {
     return (
         <nav className={`flex lg:justify-evenly justify-between mt-8 ${className}`}>
             <Link
-                href={`mailto:zrelick@gmail.com`}
+                href={`mailto:ddiaz.daniel@outlook.com`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-red-500 cursor-pointer transition-colors duration-300"
@@ -23,7 +23,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ className, size = 40 }) => {
                 {emailIcon}
             </Link>
             <Link
-                href="https://www.linkedin.com/in/daniel-diaz-33881015b/"
+                href="www.linkedin.com/in/ddiaz-daniel"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-blue-500 cursor-pointer transition-colors duration-300"
@@ -31,7 +31,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ className, size = 40 }) => {
                 {linkedinIcon}
             </Link>
             <Link
-                href="https://github.com/DanDiazRep"
+                href="https://github.com/ddiaz-daniel"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-500 cursor-pointer transition-colors duration-300"

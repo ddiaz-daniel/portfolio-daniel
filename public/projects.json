@@ -14,7 +14,7 @@
                 "jquery"
             ],
             "preview": "/preview/magnuson.png",
-            "github": "https://github.com/DanDiazRep/MGO",
+            "github": "https://github.com/ddiaz-daniel/MGO",
             "website": "https://magnusongroup.com/configurators.html",
             "collaborators": [
                 {
@@ -46,7 +46,7 @@
                 "dotnet"
             ],
             "preview": "/preview/wyatt.png",
-            "github": "https://github.com/DanDiazRep/Wyatt",
+            "github": "https://github.com/ddiaz-daniel/Wyatt",
             "website": "https://www.wyattseating.com/studio/index.html?name=Freeride",
             "collaborators": [
                 {
@@ -75,7 +75,7 @@
                 "jquery"
             ],
             "preview": "/preview/soss.png",
-            "github": "https://github.com/DanDiazRep/SOSS/",
+            "github": "https://github.com/ddiaz-daniel/SOSS/",
             "website": "https://www.soss.com/",
             "collaborators": [
                 {
@@ -104,8 +104,8 @@
                 "jquery"
             ],
             "preview": "/preview/tiny.png",
-            "github": "https://github.com/DanDiazRep/Tiny-House-2023",
-            "website": "https://dandiazrep.github.io/Tiny-House-2023/",
+            "github": "https://github.com/ddiaz-daniel/Tiny-House-2023",
+            "website": "https://ddiaz-daniel.github.io/Tiny-House-2023/",
             "collaborators": [
                 {
                     "id": 1,
@@ -131,7 +131,7 @@
                 "tailwind"
             ],
             "preview": "/preview/movies.png",
-            "github": "https://github.com/DanDiazRep/moviesDisplayGrid",
+            "github": "https://github.com/ddiaz-daniel/moviesDisplayGrid",
             "website": "https://movies-display-grid.vercel.app/",
             "collaborators": [],
             "tasks": [],
@@ -152,8 +152,8 @@
                 "ts"
             ],
             "preview": "/preview/trader.png",
-            "github": "https://github.com/DanDiazRep/HUX-Trader",
-            "website": "https://github.com/DanDiazRep/HUX-Trader",
+            "github": "https://github.com/ddiaz-daniel/HUX-Trader",
+            "website": "https://github.com/ddiaz-daniel/HUX-Trader",
             "collaborators": [
                 {
                     "id": 1,
@@ -220,7 +220,7 @@
                 "next"
             ],
             "preview": "/preview/earthquake.png",
-            "github": "https://github.com/DanDiazRep/react-earthquakes-visualization",
+            "github": "https://github.com/ddiaz-daniel/react-earthquakes-visualization",
             "website": "https://earthquake-viz-fdb6c.web.app/",
             "collaborators": [
                 {
@@ -249,7 +249,7 @@
                 "next"
             ],
             "preview": "/preview/elevation.png",
-            "github": "https://github.com/DanDiazRep/elevation-map",
+            "github": "https://github.com/ddiaz-daniel/elevation-map",
             "website": "https://elevation-finder.vercel.app/",
             "collaborators": [],
             "tasks": [],
@@ -268,8 +268,8 @@
                 "opencv"
             ],
             "preview": "/preview/vc.png",
-            "github": "https://github.com/DanDiazRep/Visual-Computing-Basics/",
-            "website": "https://github.com/DanDiazRep/Visual-Computing-Basics/",
+            "github": "https://github.com/ddiaz-daniel/Visual-Computing-Basics/",
+            "website": "https://github.com/ddiaz-daniel/Visual-Computing-Basics/",
             "collaborators": [],
             "tasks": [],
             "tags": [
@@ -289,8 +289,8 @@
                 "twig"
             ],
             "preview": "/preview/styleguide.png",
-            "github": "https://github.com/DanDiazRep/",
-            "website": "https://github.com/DanDiazRep/",
+            "github": "https://github.com/ddiaz-daniel/",
+            "website": "https://github.com/ddiaz-daniel/",
             "collaborators": [
                 {
                     "id": 1,
@@ -321,7 +321,7 @@
                 "tailwind"
             ],
             "preview": "/preview/portfolio.png",
-            "github": "https://github.com/DanDiazRep/portfolio-daniel",
+            "github": "https://github.com/ddiaz-daniel/portfolio-daniel",
             "website": "https://portfolio-daniel-virid.vercel.app/",
             "collaborators": [],
             "tasks": [],
