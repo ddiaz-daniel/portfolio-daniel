@@ -23,7 +23,7 @@ const SocialMedia: React.FC<SocialMediaProps> = ({ className, size = 40 }) => {
                 {emailIcon}
             </Link>
             <Link
-                href="www.linkedin.com/in/ddiaz-daniel"
+                href="https://linkedin.com/in/ddiaz-daniel"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-blue-500 cursor-pointer transition-colors duration-300"
