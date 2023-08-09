@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Stack from './cardStack';
 import Link from 'next/link';
 import { getIcon } from '~/components/technologyIcons';
-import { TfiWorld } from 'react-icons/Tfi';
+import { TfiWorld } from 'react-icons/tfi';
 
 interface ProjectCardProps {
     project: Project;
