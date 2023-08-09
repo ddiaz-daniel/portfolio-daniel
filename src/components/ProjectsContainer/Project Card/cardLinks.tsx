@@ -1,6 +1,5 @@
 import React from "react";
 import { FaGithub, FaGlobe } from "react-icons/fa";
-import { Project } from "~/types/types";
 
 interface LinksProps {
     github: string | null;
@@ -25,6 +24,6 @@ const CardLinks: React.FC<LinksProps> = ({ github, website }) => {
             </a>
         </div>
     );
-}
+};
 
 export default CardLinks;

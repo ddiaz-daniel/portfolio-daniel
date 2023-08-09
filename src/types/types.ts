@@ -1,4 +1,3 @@
-import React from "react";
 
 export interface ProjectsResponse {
     projects: Project[] | null;

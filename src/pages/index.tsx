@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import ProjectsContainer from '../components/ProjectsContainer'; // Assuming you have these components defined
 import Navigation from '~/components/Navigation/navigation';
 import PortfolioHeader from '~/components/portfolioHeader';
@@ -39,7 +39,7 @@ const Home = () => {
       <div className="flex min-h-screen">
         <Navigation />
         <div className="flex flex-col items-center justify-center snap-mandatory snap-y">
-          {false ?
+          {true ?
             <BackgroundParticles className="z-[-10] fixed top-0 left-0 w-full h-full bg-[rgb(0,0,50)]" /> :
             <div className="z-[-10] fixed top-0 left-0 w-full h-full bg-[rgb(0,0,50)]" />}
           <PortfolioHeader className="snap-start" />

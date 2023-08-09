@@ -1,9 +1,9 @@
 import React from "react";
 import { FaQuestion } from "react-icons/fa";
 import {
-    SiOpencv, SiNextdotjs, SiJquery, SiTypescript, SiCsharp, SiGithub, SiWhatsapp,
-    SiGmail, SiLinkedin, SiPython, SiJavascript, SiArduino, SiBootstrap, SiCplusplus,
-    SiCss3, SiHtml5, SiPhp, SiReact, SiSass, SiTailwindcss, SiUnity, SiDotnet, SiVuedotjs, SiBitwig
+    SiNextdotjs, SiJquery, SiTypescript, SiCsharp, SiGithub, SiWhatsapp,
+    SiGmail, SiLinkedin, SiJavascript, SiArduino, SiBootstrap, SiCplusplus,
+    SiCss3, SiHtml5, SiPhp, SiReact, SiSass, SiTailwindcss, SiUnity, SiDotnet, SiVuedotjs
 } from "react-icons/si";
 import Image from "next/image";
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { type Project } from '~/types/types';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 
@@ -11,13 +10,8 @@ interface ProjectHexagonProps {
 }
 
 const ProjectHexagon: React.FC<ProjectHexagonProps> = ({ project, className }) => {
-    const router = useRouter();
     const year = new Date(project.created_on).getFullYear();
 
-    const goToProject = (id: number) => {
-        router.push(`/projects/${id}`).catch((err) => console.error("Error navigating to subpage:", err));
-        return;
-    };
     const fullHref = typeof window !== 'undefined' ? `${window.location.origin}` : "";
 
     return (

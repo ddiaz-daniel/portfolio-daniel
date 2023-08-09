@@ -1,7 +1,6 @@
 import { Suspense } from 'react';
 import ProjectFilter from './projectFilter';
 import useGetProjects from './useGetProjects';
-import ProjectHexagon from './projectHexagon';
 import { useProjectFilterContext } from './projectFilterContext';
 import ProjectCard from './Project Card';
 

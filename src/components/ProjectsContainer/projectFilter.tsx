@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { getIcon, languages } from '../technologyIcons';
 import { useProjectFilterContext } from './projectFilterContext';
 
@@ -17,7 +17,6 @@ const languageCategories: Record<string, string[]> = {
 
 const ProjectFilter: React.FC = () => {
     const { activeFilter, setActiveFilter } = useProjectFilterContext();
-    const [activeCategory, setActiveCategory] = useState<string>('All');
 
     const handleLanguageClick = (language: string) => {
         setActiveFilter((prevLanguages) => {
@@ -35,7 +34,6 @@ const ProjectFilter: React.FC = () => {
     };
 
     const handleCategoryChange = (category: string) => {
-        setActiveCategory(category);
         if (category === 'All') {
             setActiveFilter(languages.map((language) => language.id));
         } else {
@@ -56,6 +54,7 @@ const ProjectFilter: React.FC = () => {
 
     useEffect(() => {
         handleCategoryChange('All');
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const sortedLanguages = [...languages].sort((a, b) => a.name.localeCompare(b.name));
