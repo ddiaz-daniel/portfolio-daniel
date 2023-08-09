@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, className }) => {
 
     return (
         <div
-            className={`${className} group flex h-[32rem] w-96 m-2 md:m-4 rounded-md cursor-default
+            className={`${className} group flex h-[32rem] w-80 lg:w-96 m-2 md:m-4 rounded-md cursor-default
             bg-gradient-to-b from-cyan-400 from-30% via-purple-500 to-purple-500 p-1
              hover:from-cyan-400 hover:from-80% hover:to-cyan-600 transition-all duration-300 hover:scale-[1.01]
             shadow-lg shadow-purple-800/80 hover:shadow-cyan-700/80`}
