@@ -39,7 +39,7 @@ const Home = () => {
       <div className="flex min-h-screen">
         <Navigation />
         <div className="flex flex-col items-center justify-center snap-mandatory snap-y">
-          {true ?
+          {false ?
             <BackgroundParticles className="z-[-10] fixed top-0 left-0 w-full h-full bg-[rgb(0,0,50)]" /> :
             <div className="z-[-10] fixed top-0 left-0 w-full h-full bg-[rgb(0,0,50)]" />}
           <PortfolioHeader className="snap-start" />

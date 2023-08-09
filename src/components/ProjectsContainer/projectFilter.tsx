@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { getIcon, languages } from '../technologyIcons';
 import { useProjectFilterContext } from './projectFilterContext';
 
@@ -11,7 +11,7 @@ const categories = [
 
 const languageCategories: Record<string, string[]> = {
     'Web Technologies': ['js', 'bootstrap', 'jquery', 'html', 'css', 'react', 'next', 'php', 'scss', 'tailwind'],
-    '3D': ['unity', 'babylonjs', 'three', 'opencv'],
+    '3D': ['babylonjs', 'opencv'],
     'None': [],
 };
 
@@ -30,12 +30,8 @@ const ProjectFilter: React.FC = () => {
     };
 
     const handleAllButtonClick = () => {
-        if (activeCategory === 'All') {
-            setActiveFilter(languages.map((language) => language.id));
-            console.log(activeFilter);
-        } else {
-            setActiveFilter(languageCategories[activeCategory] ?? []);
-        }
+        setActiveFilter(languages.map((language) => language.id));
+
     };
 
     const handleCategoryChange = (category: string) => {
@@ -58,6 +54,10 @@ const ProjectFilter: React.FC = () => {
         }
     };
 
+    useEffect(() => {
+        handleCategoryChange('All');
+    }, []);
+
     const sortedLanguages = [...languages].sort((a, b) => a.name.localeCompare(b.name));
 
     return (
@@ -68,7 +68,7 @@ const ProjectFilter: React.FC = () => {
                     <button
                         key={category}
                         onClick={() => handleCategoryChange(category)}
-                        className={`px-4 py-2 text-lg rounded ${isCategoryActive(category) ? 'bg-purple-600 text-white' : 'bg-white text-black'
+                        className={`px-4 py-2 text-lg rounded ${isCategoryActive(category) ? 'bg-purple-500 text-white' : 'bg-white text-black'
                             }`}
                     >
                         {category}

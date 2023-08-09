@@ -3,6 +3,7 @@ import ProjectFilter from './projectFilter';
 import useGetProjects from './useGetProjects';
 import ProjectHexagon from './projectHexagon';
 import { useProjectFilterContext } from './projectFilterContext';
+import ProjectCard from './Project Card';
 
 interface ProjectContainerProps {
     className?: string;
@@ -23,23 +24,13 @@ const ProjectContainer: React.FC<ProjectContainerProps> = ({ className }) => {
 
         <div id="#projects" className={`flex flex-col justify-center w-full min-h-screen ${className}`}>
             <div>
-                <h1 className="text-2xl font-bold leading-none place-self-start text-white md:text-[2.5rem] lg:text-[6rem] line pt-16 pl-36">Projects</h1>
+                <h1 className="text-4xl font-bold leading-none place-self-start text-white md:text-[2.5rem] lg:text-[6rem] line pt-16 pl-36">Projects</h1>
             </div>
             <ProjectFilter />
-            <div className='hex-container px-36'>
-                {projects.map((project, index) => {
-                    if (index % 5 === 0) {
-                        const sublist = projects.slice(index, index + 5);
-                        return (
-                            <div key={index} className="hex-row">
-                                {sublist.map((subProject, subIndex) => (
-                                    <ProjectHexagon key={subIndex} project={subProject} className="hex" />
-                                ))}
-                            </div>
-                        );
-                    }
-                    return null;
-                })}
+            <div className='flex flex-wrap pl-12 md:px-8 place-content-center'>
+                {projects.map((project, subIndex) => (
+                    <ProjectCard key={subIndex} project={project} />
+                ))}
             </div>
         </div>
     );

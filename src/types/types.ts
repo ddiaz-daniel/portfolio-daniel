@@ -13,7 +13,7 @@ export interface Project {
     stack: string[];
     preview: string;
     github: string | null;
-    website: "string";
+    website: string | null;
     collaborators: Collaborator[] | null;
     tasks: Task[] | null;
     tags: string[];
