@@ -46,7 +46,7 @@ const Navigation = () => {
                             Projects
                         </span>
                     </Link>
-                    <Link className="flex flex-row w-fit group items-center" href="/documents/DIAZ_Daniel_CV_2023.pdf" target='_blank'>
+                    <Link className="flex flex-row w-fit group items-center" href="/documents/DIAZ_Daniel_CV_F3.pdf" target='_blank'>
                         <BsFileEarmarkPdf size={30} className="hover:text-purple-500" />
                         <span className="opacity-0 group-hover:opacity-100 transform pl-6 transition-opacity duration-300 bg-gray-800 pr-4 py-1 rounded-md">
                             Resume
