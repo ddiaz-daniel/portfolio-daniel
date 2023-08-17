@@ -76,7 +76,7 @@
             ],
             "preview": "/preview/soss.png",
             "github": null,
-            "website": "https://www.soss.com/",
+            "website": null,
             "collaborators": [
                 {
                     "id": 1,
@@ -153,7 +153,7 @@
             ],
             "preview": "/preview/trader.png",
             "github": "https://github.com/ddiaz-daniel/HUX-Trader",
-            "website": "https://github.com/ddiaz-daniel/HUX-Trader",
+            "website": null,
             "collaborators": [
                 {
                     "id": 1,
@@ -269,7 +269,7 @@
             ],
             "preview": "/preview/vc.png",
             "github": "https://github.com/ddiaz-daniel/Visual-Computing-Basics/",
-            "website": "https://github.com/ddiaz-daniel/Visual-Computing-Basics/",
+            "website": null,
             "collaborators": [],
             "tasks": [],
             "tags": [
@@ -289,8 +289,8 @@
                 "twig"
             ],
             "preview": "/preview/styleguide.png",
-            "github": "https://github.com/ddiaz-daniel/",
-            "website": "https://github.com/ddiaz-daniel/",
+            "github": null,
+            "website": null,
             "collaborators": [
                 {
                     "id": 1,
