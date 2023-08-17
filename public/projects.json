@@ -14,7 +14,7 @@
                 "jquery"
             ],
             "preview": "/preview/magnuson.png",
-            "github": "https://github.com/ddiaz-daniel/MGO",
+            "github": null,
             "website": "https://magnusongroup.com/configurators.html",
             "collaborators": [
                 {
@@ -46,7 +46,7 @@
                 "dotnet"
             ],
             "preview": "/preview/wyatt.png",
-            "github": "https://github.com/ddiaz-daniel/Wyatt",
+            "github": null,
             "website": "https://www.wyattseating.com/studio/index.html?name=Freeride",
             "collaborators": [
                 {
@@ -75,7 +75,7 @@
                 "jquery"
             ],
             "preview": "/preview/soss.png",
-            "github": "https://github.com/ddiaz-daniel/SOSS/",
+            "github": null,
             "website": "https://www.soss.com/",
             "collaborators": [
                 {
@@ -104,7 +104,7 @@
                 "jquery"
             ],
             "preview": "/preview/tiny.png",
-            "github": "https://github.com/ddiaz-daniel/Tiny-House-2023",
+            "github": null,
             "website": "https://ddiaz-daniel.github.io/Tiny-House-2023/",
             "collaborators": [
                 {
