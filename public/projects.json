@@ -279,7 +279,7 @@
         },
         {
             "id": 11,
-            "name": "Styleguide Generator",
+            "name": "AI Styleguide Generator",
             "description": "This project was build using ChatGPT API to create a customizable styleguide generator for developers and inspiration for designers. It generates a styleguide based on the input of the user. The project was developed as part of a group 3 project in the FH in Hagenberg. It uses Twig, JavaScript, SCSS and PHP.",
             "created_on": "2023-07-01 00:00:00",
             "stack": [
@@ -289,8 +289,8 @@
                 "twig"
             ],
             "preview": "/preview/styleguide.png",
-            "github": null,
-            "website": null,
+            "github": "https://github.com/ddiaz-daniel/ai-styleguide-generator",
+            "website": "https://ai-styleguide-generator.000webhostapp.com/kiGettingStarted",
             "collaborators": [
                 {
                     "id": 1,
