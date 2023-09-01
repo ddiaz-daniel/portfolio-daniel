@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Script from 'next/script';
 import React, { useEffect } from 'react';
-import ProjectsContainer from '../components/ProjectsContainer'; // Assuming you have these components defined
+import ProjectsContainer from '../components/ProjectsContainer';
 import Navigation from '~/components/Navigation/navigation';
 import PortfolioHeader from '~/components/portfolioHeader';
 import About from '~/components/about';
@@ -11,7 +11,6 @@ import { ProjectFilterProvider } from '~/components/ProjectsContainer/projectFil
 
 const Home = () => {
 
-  //get rounte and scroll to section after page load
   useEffect(() => {
     const fullHref = typeof window !== 'undefined' ? `${window.location.href}` : "";
     const route = fullHref.split('#')[1];
