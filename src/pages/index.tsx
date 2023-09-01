@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Script from 'next/script';
 import React, { useEffect } from 'react';
 import ProjectsContainer from '../components/ProjectsContainer'; // Assuming you have these components defined
 import Navigation from '~/components/Navigation/navigation';
@@ -28,6 +29,22 @@ const Home = () => {
     }
   };
 
+  const GoogleAnalytics: React.FC = () => {
+    return (
+      <>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-R0WRE8MP16"></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+  
+            gtag('config', 'G-R0WRE8MP16');
+          `}
+        </Script>
+      </>
+    );
+  };
 
   return (
     <>
@@ -35,7 +52,8 @@ const Home = () => {
         <title>Daniel&apos;s Portfolio</title>
         <meta name="description" content="Daniel Diaz Portfolio" />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Head >
+      <GoogleAnalytics />
       <div className="flex min-h-screen">
         <Navigation />
         <div className="flex flex-col items-center justify-center snap-mandatory snap-y">
