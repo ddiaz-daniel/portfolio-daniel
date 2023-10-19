@@ -143,7 +143,7 @@
         {
             "id": 6,
             "name": "Objects Trader",
-            "description": "The idea of the application is 'Tinder for trading items'. You can register with your e-mail, Google, or GitHub, and proceed to add items to your account. Each item has a picture, name, and description. For each item individually, you can swipe other items and get matches. You can also edit and delete items. This project was built using React and Tailwind. The project was developed as part of a front-end course at the FH in Hagenberg in a team of 3.",
+            "description": "The idea of the application is 'Tinder for trading items'. You can register with your e-mail, Google, or GitHub, and proceed to add items to your account. Each item has a picture, name, and description. For each item individually, you can swipe other items and get matches. You can also edit and delete items. This project was built using React and Tailwind. The project was developed as part of a front-end course at the FH in Hagenberg in a team of 3. **The website experience may vary since the backend and db are hosted on free servers.",
             "created_on": "2022-11-01 00:00:00",
             "stack": [
                 "react",
@@ -153,7 +153,7 @@
             ],
             "preview": "/preview/trader.png",
             "github": "https://github.com/ddiaz-daniel/HUX-Trader",
-            "website": null,
+            "website": "https://trader-f4c50.web.app/",
             "collaborators": [
                 {
                     "id": 1,
@@ -280,7 +280,7 @@
         {
             "id": 11,
             "name": "AI Styleguide Generator",
-            "description": "This project was build using ChatGPT API to create a customizable styleguide generator for developers and inspiration for designers. It generates a styleguide based on the input of the user. The project was developed as part of a group 3 project in the FH in Hagenberg. It uses Twig, JavaScript, SCSS and PHP.",
+            "description": "This project was build using ChatGPT API to create a customizable styleguide generator for developers and inspiration for designers. It generates a styleguide based on the input of the user. The project was developed as part of a group 3 project in the FH in Hagenberg. It uses Twig, JavaScript, SCSS and PHP. **The website experience may vary since the project was migrated from a paid to a free server, it could be not 100% operational at every moment.",
             "created_on": "2023-07-01 00:00:00",
             "stack": [
                 "php",
