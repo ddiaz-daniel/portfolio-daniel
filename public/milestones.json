@@ -47,6 +47,22 @@
             "date": "2022-10-01",
             "image": "images/fh.svg",
             "side": "right"
+        },
+        {
+            "id": 7,
+            "name": "Working as a Fullstack Developer at FH OÖ (Steyr)",
+            "description": "<span>On the winter semester 2023, I started working as a fullstack developer at the FH Oberösterreich in Steyr. I am in charge of developing a centralized login system for internal use in Steyr. Working alongside reseachers and other developers, I am developing the system using Next.js, Typescript, and FastAPI.</span>",
+            "date": "2022-01-10",
+            "image": "/images/fh-steyr.jpg",
+            "side": "left"
+        },
+        {
+            "id": 8,
+            "name": "A Master of Sciences in Interactive Media",
+            "description": "<span>I finished my studies on October 2024. I wrote my Master thesis: \"Using AI Models for Advertisement Generation: Evaluating the Effects on Visual Perception and Attention\"</span>",
+            "date": "2024-10-10",
+            "image": "/images/graduation.gif",
+            "side": "right"
         }
     ]
 }
